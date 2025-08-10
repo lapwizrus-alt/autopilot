@@ -1860,7 +1860,7 @@ Import-AutopilotCSV -csvFile C:\Devices.csv
 
                 # Still processing? Sleep before trying again.
                 if ($processingCount -gt 0) {
-                    Start-Sleep 15
+                    Start-Sleep 60
                 }
             }
 
