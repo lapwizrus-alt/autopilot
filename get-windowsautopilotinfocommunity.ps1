@@ -154,7 +154,10 @@ param(
 )
 
 Begin {
+
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     Start-Transcript -Path "C:\Windows\Setup\Scripts\error-log.txt"
+    
     # Initialize empty list
     $computers = @()
 
